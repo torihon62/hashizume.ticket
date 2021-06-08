@@ -80,34 +80,6 @@ function App() {
 					<Typography>(橋爪専用ページ)</Typography>
 				</Grid>
 				<Grid className={classes.section} item xs={12}>
-					<h2>公演延期のお知らせ</h2>
-				</Grid>
-				<Grid className={classes.content} item xs={12}>
-					<Typography>
-						この度、緊急事態宣言の延長を受け、座席数の制限が発生したことにより、より多くのお客様に見ていただくべく、公演日程が7月2日(金)、3日(土)へと延期することが決まりました。
-					</Typography>
-					<Typography>楽しみにしてくださった皆さま、大変申し訳ございません。</Typography>
-					<br />
-					<Typography>
-						お振り込みいただきましたチケット代の返金に関しまして、ご登録いただいたメールアドレスへ5月11日(火)より、ご連絡させて頂きます。
-					</Typography>
-					<br />
-					<Typography>皆さまにはお手数をおかけ致しまして、大変申し訳ございません。</Typography>
-					<Typography>7月2日、3日の公演でもぜひ応援していただけましたら幸いです。</Typography>
-					<br />
-					<Typography>
-						役と向き合う時間が増えたことで、より良いものをお見せしたいと決意を新たにしております。
-					</Typography>
-					<br />
-					<Typography>みなさまも、笑顔でお会い出来る日まで、</Typography>
-					<Typography>どうぞお気をつけてお過ごしください。</Typography>
-					<br />
-					<Typography>何卒よろしくお願いいたします。</Typography>
-					<br />
-					<br />
-					<Typography>橋爪紋佳</Typography>
-				</Grid>
-				<Grid className={classes.section} item xs={12}>
 					<h2>作品紹介</h2>
 				</Grid>
 				<Grid className={classes.content} item xs={12} md={6}>
@@ -129,7 +101,7 @@ function App() {
 					</Typography>
 				</Grid>
 				<Grid className={classes.contentCenter} item xs={12} md={6}>
-					<a target={'_blank'} href="./flyer.png">
+					<a target={'_blank'} href="./flyer.png" style={{ display: 'flex', justifyContent: 'center' }}>
 						<img className={classes.flyer} src={'./flyer.png'} alt={'フランケンシュタイン_チラシ'} />
 					</a>
 				</Grid>
@@ -240,8 +212,8 @@ function App() {
 				</Grid>
 				<Grid style={{ paddingBottom: 0, paddingTop: 0 }} className={classes.content} item xs={12} md={6}>
 					<h3>公演スケジュール</h3>
-					<Typography>2021年5月28日(金) 18:00</Typography>
-					<Typography>2021年5月29日(土) 12:30 / 16:30</Typography>
+					<Typography>2021年7月2日(金) 12:00 (公開GP) / 18:00</Typography>
+					<Typography>2021年7月3日(土) 12:30 / 16:30</Typography>
 					<Typography>(各回、開場は45分前)</Typography>
 					<h3>会場</h3>
 					<Typography>恵比寿・エコー劇場</Typography>
@@ -252,18 +224,18 @@ function App() {
 					</Typography>
 
 					<h3>チケット</h3>
-					<Typography>2,500円(自由席)</Typography>
+					<Typography>2,500円(自由席) (公開GPのみ1,500円)</Typography>
 				</Grid>
 				<Grid className={classes.section} item xs={12}>
 					<h2>新型コロナウイルス感染症拡大予防・ご来場のお客様に緊急連絡先ご記入のお願い</h2>
 				</Grid>
 				<Grid className={classes.content} item xs={12}>
 					<Typography>
-						今回、チケットと一緒に、「お客様の緊急連絡先・座席番号 ご記入カード」を同封いたします。
+						チケットの裏側に「お客様の緊急連絡先・座席番号」の記入欄がございます。
 					</Typography>
 					<br />
 					<Typography>
-						当日、『お座りになった座席の番号』をご記入いただき、劇場内にてスタッフが回収させていただくもので、万が一新型コロナウイルスに感染された方がご観劇された場合には、保健所に速やかに報告するとともに、ご来場様のお名前、緊急連絡先を保健所と共有させていただきます。
+						ご記入いただいたものを劇場内にてスタッフが回収させていただき、万が一新型コロナウイルスに感染された方がご観劇された場合には、保健所に速やかに報告するとともに、ご来場様のお名前、緊急連絡先を保健所と共有させていただきます。
 					</Typography>
 					<Typography>
 						いただいた個人情報はその他の目的には使用せず、公演日から4週間保管後、適切な手段で廃棄いたします。
@@ -281,7 +253,7 @@ function App() {
 						<a
 							rel="noreferrer"
 							href={
-								'https://docs.google.com/forms/d/e/1FAIpQLSeIjpgMJ3mPJGasDoCo_0qH95JT1AxXb_0tR9smKl1GTP4Siw/viewform?usp=sf_link'
+								'https://docs.google.com/forms/d/e/1FAIpQLSdPLxrW-bLvEAZZ5fUCaUuWhHsG-7k2394zJehkKQlt0wcbhA/viewform?usp=pp_url&entry.1401218628=0%E6%9E%9A&entry.1825271642=0%E6%9E%9A&entry.1993608475=0%E6%9E%9A&entry.1923977320=0%E6%9E%9A'
 							}
 							target={'_blank'}
 						>
@@ -293,7 +265,7 @@ function App() {
 					<div className={classes.form}>
 						<iframe
 							title="ticket"
-							src="https://docs.google.com/forms/d/e/1FAIpQLSeIjpgMJ3mPJGasDoCo_0qH95JT1AxXb_0tR9smKl1GTP4Siw/viewform?usp=pp_url&entry.1401218628=0%E6%9E%9A&entry.1825271642=0%E6%9E%9A&entry.1993608475=0%E6%9E%9A"
+							src="https://docs.google.com/forms/d/e/1FAIpQLSdPLxrW-bLvEAZZ5fUCaUuWhHsG-7k2394zJehkKQlt0wcbhA/viewform?usp=pp_url&entry.1401218628=0%E6%9E%9A&entry.1825271642=0%E6%9E%9A&entry.1993608475=0%E6%9E%9A&entry.1923977320=0%E6%9E%9A"
 							frameBorder="0"
 							marginHeight={0}
 							marginWidth={0}
